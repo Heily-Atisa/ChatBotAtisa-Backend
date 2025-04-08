@@ -1,1 +1,33 @@
-# ChatBotAtisa-Backend
+# Documentación de la API del Backend del ChatBot
+
+## Descripción General
+Texto descriptivo aquí, incluir propósito general del backend...
+
+## Arquitectura
+Detalles de la arquitectura aquí...
+
+## Integración con IA
+Explicación del sistema RAG y cómo se integra con GPT-4o Mini...
+
+## Modelo de Datos
+Descripción de las entidades y sus relaciones...
+
+## Endpoints de la API
+
+### Autenticación
+Endpoints de autenticación...
+
+### Gestión Documental
+Endpoints de documentos...
+
+### Chat
+Endpoints del chatbot...
+
+### Notificaciones
+Endpoints de notificaciones...
+
+## Configuración y Despliegue
+Instrucciones para configurar y ejecutar el backend...
+
+## Seguridad
+Medidas de seguridad implementadas en la API...
