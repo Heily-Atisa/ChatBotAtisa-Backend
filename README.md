@@ -17,15 +17,13 @@ Descripción de las entidades y sus relaciones...
 ### Autenticación
 
 - POST /api/users/register - Registro de nuevos usuarios
-- POST /api/users/login - Autenticación de usuarios
+- POST /api/users/login - Autenticación de usuarios y recogida de informacion
 
 ### Gestión de Usuarios
 
-- GET /api/users/{id} - Obtener información de un usuario específico
-- PUT /api/users/{id} - Actualizar información de usuario
+- PUT /api/users/{id} - Actualizar información de usuario y Cambiar rol de usuario (solo administradores)
 - DELETE /api/users/{id} - Eliminar usuario (solo administradores)
 - GET /api/users - Listar todos los usuarios (solo administradores)
-- POST /api/users/{id}/role - Cambiar rol de usuario (solo administradores)
 
 ### Gestión Documental
 
@@ -56,7 +54,6 @@ Descripción de las entidades y sus relaciones...
 - POST /api/notifications - Crear una nueva notificación (administradores)
 - GET /api/notifications - Obtener notificaciones del usuario
 - PUT /api/notifications/{id}/read - Marcar notificación como leída
-
 
 ## Configuración y Despliegue
 Instrucciones para configurar y ejecutar el backend...
