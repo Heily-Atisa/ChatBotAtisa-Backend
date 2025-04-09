@@ -14,12 +14,12 @@ Descripción de las entidades y sus relaciones...
 
 ## Endpoints de la API
 
-# Autenticación
+### Autenticación
 
 - POST /api/users/register - Registro de nuevos usuarios
 - POST /api/users/login - Autenticación de usuarios
 
-# Gestión de Usuarios
+### Gestión de Usuarios
 
 - GET /api/users/{id} - Obtener información de un usuario específico
 - PUT /api/users/{id} - Actualizar información de usuario
@@ -27,7 +27,7 @@ Descripción de las entidades y sus relaciones...
 - GET /api/users - Listar todos los usuarios (solo administradores)
 - POST /api/users/{id}/role - Cambiar rol de usuario (solo administradores)
 
-# Gestión Documental
+### Gestión Documental
 
 - POST /api/documents - Subir un nuevo documento
 - GET /api/documents - Listar todos los documentos disponibles para el usuario
@@ -40,7 +40,7 @@ Descripción de las entidades y sus relaciones...
 - GET /api/documents/{id}/users - Listar usuarios con acceso a un documento
 - DELETE /api/documents/{id}/users/{user_id} - Eliminar acceso de un usuario a un documento
 
-# Chat
+### Chat
 
 - POST /api/chats - Crear un nuevo chat
 - GET /api/chats - Listar todos los chats del usuario
@@ -51,7 +51,7 @@ Descripción de las entidades y sus relaciones...
 - GET /api/chats/{id}/messages - Obtener todos los mensajes de un chat
 - DELETE /api/chats/{id}/messages/{message_id} - Eliminar un mensaje específico
 
-# Notificaciones
+### Notificaciones
 
 - POST /api/notifications - Crear una nueva notificación (administradores)
 - GET /api/notifications - Obtener notificaciones del usuario
