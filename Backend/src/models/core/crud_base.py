@@ -1,7 +1,7 @@
 # crud_base.py
+from typing import Any, Dict, Generic, List, Optional, Type, TypeVar, Union
 from sqlalchemy.orm import Session
 from sqlalchemy.exc import SQLAlchemyError
-from typing import Any, Dict, Generic, List, Optional, Type, TypeVar, Union
 
 # Definición del tipo genérico para los modelos
 ModelType = TypeVar("ModelType")
