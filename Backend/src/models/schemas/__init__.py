@@ -13,6 +13,7 @@ Importaciones comunes para ser reutilizadas:
 - `validator`: Decorador para agregar validaciones personalizadas en los modelos.
 - `EmailStr`: Tipo de dato para validar direcciones de correo electrónico.
 
+
 - `List`: Tipo genérico para listas.
 - `Optional`: Indica que un campo puede ser opcional (puede ser `None`).
 - `Dict`: Tipo genérico para diccionarios.
