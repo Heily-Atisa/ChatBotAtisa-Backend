@@ -3,7 +3,7 @@
 Importaciones comunes para ser reutilizadas:
 
 - `FastAPI`: Framework principal para construir aplicaciones web y APIs.
-- `Body`: Utilizado para extraer datos del cuerpo de las solicitudes HTTP.
+- `Body`: Utilizado para extraer datos del cuerpo de las solicitudes HTTP un parametro.
 - `Depends`: Permite la inyección de dependencias en rutas y funciones.
 - `HTTPException`: Clase para manejar excepciones HTTP personalizadas.
 - `status`: Proporciona códigos de estado HTTP estándar.
@@ -18,7 +18,17 @@ Importaciones comunes para ser reutilizadas:
 - `Dict`: Tipo genérico para diccionarios.
 - `Union`: Permite definir campos que aceptan múltiples tipos de datos.
 - `Any`: Tipo genérico que acepta cualquier valor.
+- 'Response': Clase para manejar respuestas HTTP personalizadas.
+
+- `SQLAlchemy`: ORM para interactuar con bases de datos relacionales.
+- `Session`: Clase para manejar sesiones de base de datos en SQLAlchemy.
+- `declarative_base`: Función para crear la clase base declarativa en SQLAlchemy.
+- `Column`: Define columnas para modelos SQLAlchemy.
+- `Integer`, `DateTime`: Tipos de datos para columnas en SQLAlchemy.
+
 """
-from fastapi import FastAPI, Body, Depends, HTTPException, status
+from fastapi import FastAPI, Depends, HTTPException, status, Response
+from fastapi.params import Body
 from pydantic import BaseModel, Field, validator, EmailStr
 from typing import List, Optional, Dict, Union, Any
+
