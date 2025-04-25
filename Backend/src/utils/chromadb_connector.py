@@ -98,3 +98,5 @@ class ChromaDBConnector:
                 metadata=metadata or {},
                 embedding_function=None
             )
+        
+    
