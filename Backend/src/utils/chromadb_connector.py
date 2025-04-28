@@ -61,15 +61,15 @@ class ChromaDBConnector:
         return cls._instance
     
     def get_client(self):
+        
+        #
         """Inicializa el cliente persistente si aún no existe"""
         if self._client is None:
-            # Crea el directorio si no existe
-            os.makedirs("./chromadb_data", exist_ok=True)
-            
-            print(f"Inicializando cliente persistente de ChromaDB en ./chromadb_data")
+
+            print(f"Inicializando cliente HTTP de ChromaDB")
             
             # Inicializa el cliente persistente - esto maneja todo internamente
-            self._client = chromadb.PersistentClient(path="./chromadb_data")
+            self._client = chromadb.HttpClient(host="10.15.22.81", port=8500)
             
         return self._client
     
